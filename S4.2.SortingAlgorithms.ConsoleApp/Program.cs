@@ -29,7 +29,7 @@ namespace S4._2.SortingAlgorithms.ConsoleApp
             }
         }
 
-        // Goes through the entire array to check if item "j" is in the correct spot. Repeats for every item
+        // Goes through the entire array to check if item "j" is in the correct spot. Repeats for every item.
         private static void InsertionSort(int[] array)
         {
             for(int i = 1; i < array.Length; i++)
