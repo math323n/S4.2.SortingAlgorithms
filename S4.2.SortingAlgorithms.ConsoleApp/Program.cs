@@ -15,17 +15,21 @@ namespace S4._2.SortingAlgorithms.ConsoleApp
             }
         }
 
+        // A function to implement bubble sort.
         // Compares the last item with the one before it, & swaps them if they are not in the correct order. Repeats this process "n" times.
         private static void BubbleSort(int[] array)
         {
+            // Iterate over the array, starting with the second element.
             for(int i = 1; i < array.Length; i++)
             {
                 for(int j = array.Length - 1; j >= i; j--)
                 {
+                    // if two adjoining elements, are in the wrong order, swap them.
                     if(array[j] < array[j - 1])
                     {
                         (array[j - 1], array[j]) = (array[j], array[j - 1]);
                     }
+                    // Repeat above until end of array.
                 }
             }
         }
@@ -72,6 +76,7 @@ namespace S4._2.SortingAlgorithms.ConsoleApp
             }
             FillArray(t, array, 0);
         }
+
 
         private static int FillArray(SortedSet<int> t, int[] array, int j)
         {
