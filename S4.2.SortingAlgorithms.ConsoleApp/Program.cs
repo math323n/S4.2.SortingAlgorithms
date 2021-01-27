@@ -8,7 +8,12 @@ namespace S4._2.SortingAlgorithms.ConsoleApp
         static void Main()
         {
             int[] array = { 4, 1, 3, 2 };
-            SelectionSort(array);
+            //SelectionSort(array);
+            //for(int i = 0; i < array.Length; i++)
+            //{
+            //    Console.WriteLine(array[i]);
+            //}
+            BubbleSort(array);
             for(int i = 0; i < array.Length; i++)
             {
                 Console.WriteLine(array[i]);
@@ -27,6 +32,7 @@ namespace S4._2.SortingAlgorithms.ConsoleApp
                     // if two adjoining elements, are in the wrong order, swap them.
                     if(array[j] < array[j - 1])
                     {
+                        // Code to swap 
                         (array[j - 1], array[j]) = (array[j], array[j - 1]);
                     }
                     // Repeat above until end of array.
